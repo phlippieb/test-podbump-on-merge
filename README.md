@@ -3,7 +3,7 @@ A dummy repo to workshop a workflow where we do pod bumps on merge
 
 # The current problem
 
-Currently on the Health pod, and presumably some others, the pod bump aspect of our workflow is as follows:
+Currently on the my work pod, and presumably some others, the pod bump aspect of our workflow is as follows:
 
 1. I do some feature work on a branch
 2. I create a pod bump (in the podspec) for my work
