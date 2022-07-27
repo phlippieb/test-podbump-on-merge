@@ -50,7 +50,9 @@ I'd like to leverage Github Actions to implement this. I know that some of the o
   - Use the existing actions to perform and commit the bump
 - As an added bonus, we could then kick off a `manual_pod_release` action on Bitrise
 
-# Steps to do
+# Steps
+
+**Edit:** All tasks are complete. The steps are outlined below, and detailed in the linked issues.
 
 This repo will act as a playground to implement a representative solution. The steps are as follows:
 
