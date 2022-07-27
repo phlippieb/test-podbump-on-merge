@@ -54,7 +54,7 @@ I'd like to leverage Github Actions to implement this. I know that some of the o
 
 This repo will act as a playground to implement a representative solution. The steps are as follows:
 
-- [ ] Create a dummy file that can be changed to simulate PR changes
+- [x] Create a dummy file that can be changed to simulate PR changes (DONE: See file.swift)
 - [ ] Create labels for the types of version bumps
 - [ ] Implement the requirement that a type of version bump must be specified in order for a PR to be merged
 - [ ] Create the "on-merge" action
