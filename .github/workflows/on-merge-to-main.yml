@@ -2,25 +2,26 @@ name: Version bump
 on:
   push:
     branches: [ "main" ]
+    types: [ closed ]
   workflow_dispatch:
 jobs:
   perform-patch-bump:
     runs-on: ubuntu-latest
-    if: ${{ github.event.label.name == 'bump:patch' }}
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:patch')) }}
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo "Patch bump"
   perform-minor-bump:
     runs-on: ubuntu-latest
-    if: ${{ github.event.label.name == 'bump:minor' }}
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:minor')) }}
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo "Minor bump"
   perform-major-bump:
     runs-on: ubuntu-latest
-    if: ${{ github.event.label.name == 'bump:major' }}
+    if: ${{ (github.event.pull_request.merged == true) && (contains(github.event.pull_request.labels.*.name, 'bump:major')) }}
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
