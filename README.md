@@ -50,3 +50,13 @@ I'd like to leverage Github Actions to implement this. I know that some of the o
   - Use the existing actions to perform and commit the bump
 - As an added bonus, we could then kick off a `manual_pod_release` action on Bitrise
 
+# Steps to do
+
+This repo will act as a playground to implement a representative solution. The steps are as follows:
+
+- [ ] Create a dummy file that can be changed to simulate PR changes
+- [ ] Create labels for the types of version bumps
+- [ ] Implement the requirement that a type of version bump must be specified in order for a PR to be merged
+- [ ] Create the "on-merge" action
+- [ ] On merge, determine which type of pod bump is required based on the label of the last-merged PR
+- [ ] On merge, run a dummy action depending on the type of pod bump (in practice, this will kick off a fastlane action so we don't have to work out the details here)
