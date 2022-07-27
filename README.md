@@ -56,7 +56,7 @@ This repo will act as a playground to implement a representative solution. The s
 
 - [x] Create a dummy file that can be changed to simulate PR changes (DONE: See file.swift)
 - [x] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/1) Create labels for the types of version bumps
-- [ ] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/2) Implement the requirement that a type of version bump must be specified in order for a PR to be merged
+- [x] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/2) Implement the requirement that a type of version bump must be specified in order for a PR to be merged
 - [ ] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/3) Create the "on-merge" action
 - [ ] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/4) On merge, determine which type of pod bump is required based on the label of the last-merged PR
 - [ ] (https://github.com/phlippieb-discovery/test-podbump-on-merge/issues/5) On merge, run a dummy action depending on the type of pod bump (in practice, this will kick off a fastlane action so we don't have to work out the details here)
